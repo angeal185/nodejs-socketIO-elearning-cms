@@ -1,0 +1,69 @@
+{% extends 'layout.njk' %}
+{% block content %}
+  <modal id="mdl2">
+    <h2>Test results</h2>
+    <p>View your results below</p>
+    <div id="result"></div>
+    <button class="btn btn-default" onclick="mdl('mdl2','none')">close</button>
+  </modal>
+  <div class="container ani text-center">
+
+    <h1>Random Math Test</h1>
+<div class="row">
+    <div class="col-md-6 text-center">
+      <h3>Question</h3>
+      <h3 id="q">waiting...</h3>
+    </div>
+    <div class="col-md-6 text-center">
+      <h3>Time</h3>
+      <h3 id="time">0</h3>
+    </div>
+
+
+    <div class="col-md-4 col-md-offset-4">
+      <label>Answer</label>
+      <input type="text" id="answer" class="form-control text-center">
+    </div>
+    <button type="button" id="answerBtn" class="form-control" onclick="answerit();">Submit</button>
+
+    <h3>Results</h3>
+
+      <div class="col-md-6 text-center">
+        <label>Correct</label>
+        <input type="text" id="points" class="form-control text-center mb20" value="0" readonly>
+      </div>
+      <div class="col-md-6 text-center">
+        <label>inCorrect</label>
+        <input type="text" id="incorrect" class="form-control text-center mb20" value="0" readonly>
+      </div>
+      <br>
+      <h3 class="mt40">options</h3>
+      <div class="col-md-6 text-center">
+        <button type="button" class="btn btn-default btn-block" onclick="location.reload();">Restart</button>
+      </div>
+      <div class="col-md-6 text-center">
+        <button type="button" id="start" class="btn btn-default btn-block" onclick="startgame(),disable('#start')">Start</button>
+      </div>
+    </div>
+    <h3 class="mt40">Settings</h3>
+<div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <label>Time limit</label>
+      <input type="text" id="timelimit" class="form-control text-center mb20">
+      <label>Selected</label>
+      <input type="text" id="settingsCurrent" class="form-control text-center mb20" value="Random" readonly>
+    </div>
+    <div class="btn-group" id="settingsGroup" role="group" aria-label="Large button group">
+    </div>
+</div>
+    <div id="selectBtns"></div>
+
+  </div>
+
+{% endblock %}
+{%block scriptsPre%}
+<script>
+var sounds = {{config.test.sounds|dump}},
+settingsBtn = {{config.test.settingsBtn|dump}};
+</script>
+{% endblock %}

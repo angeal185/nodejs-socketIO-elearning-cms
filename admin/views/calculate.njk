@@ -1,0 +1,18 @@
+{% extends 'layout.njk' %}
+{% block content %}
+<div class="content ani">
+  <h3 class="text-center">{{title|capitalize}}</h3>
+</div>
+{% endblock %}
+{%block scripts%}
+<script>
+  var calcTpl = '<div class="cal"><div class="screen"></div><input type="hidden" class="outcome"><ul class="buttons"></ul></div>'
+  var lst = {{config.calculator|dump}};
+  $('.content').append(calcTpl);
+  $(lst).each(function(index, el) {
+    $('.buttons').append('<li><a class="'+el.class+'" href="'+el.href+'">'+el.html+'</a></li>')
+  });
+  $('.clear,.tall').removeAttr('href');
+  calculator();
+</script>
+{% endblock %}

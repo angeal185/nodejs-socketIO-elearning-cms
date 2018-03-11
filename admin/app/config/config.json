@@ -1,0 +1,139 @@
+{
+    "app": {
+        "port": 3000,
+        "minifyOutput": false
+    },
+    "quickNav": [
+        "colors",
+        "fruit",
+        "vegetables",
+        "animals",
+        "body",
+        "letters",
+        "numbers",
+        "items",
+        "cooked-food"
+    ],
+    "users":[
+      "dandan",
+      "baobao"
+    ],
+    "test":{
+      "settingsBtn": [{
+        "id":"random",
+        "title":"Random"
+      },{
+        "id":"plus",
+        "title":"+"
+      },{
+        "id":"minus",
+        "title":"-"
+      },{
+        "id":"times",
+        "title":"x"
+      },{
+        "id":"divide",
+        "title":"/"
+      }],
+      "sounds": [
+        {
+          "src": "correct.wav",
+          "id": "correct"
+        }, {
+          "src": "incorrect.wav",
+          "id": "incorrect"
+        }, {
+          "src": "math/divide.wav",
+          "id": "divide"
+        }, {
+          "src": "math/divided_by.wav",
+          "id": "divided_by"
+        }, {
+          "src": "math/minus.wav",
+          "id": "minus"
+        }, {
+          "src": "math/plus.wav",
+          "id": "plus"
+        }, {
+          "src": "math/random.wav",
+          "id": "random"
+        }, {
+          "src": "math/times.wav",
+          "id": "times"
+        }
+      ]
+    },
+    "calculator":[{
+      "class":"clear",
+      "href":"",
+      "html":"C"
+    },{
+      "class":"val",
+      "href":"-",
+      "html":"&plusmn;"
+    },{
+      "class":"val",
+      "href":"/",
+      "html":"&divide;"
+    },{
+      "class":"val",
+      "href":"*",
+      "html":"&times;"
+    },{
+      "class":"val",
+      "href":"7",
+      "html":"7"
+    },{
+      "class":"val",
+      "href":"8",
+      "html":"8"
+    },{
+      "class":"val",
+      "href":"9",
+      "html":"9"
+    },{
+      "class":"val",
+      "href":"-",
+      "html":"-"
+    },{
+      "class":"val",
+      "href":"4",
+      "html":"4"
+    },{
+      "class":"val",
+      "href":"5",
+      "html":"5"
+    },{
+      "class":"val",
+      "href":"6",
+      "html":"6"
+    },{
+      "class":"val",
+      "href":"+",
+      "html":"+"
+    },{
+      "class":"val",
+      "href":"1",
+      "html":"1"
+    },{
+      "class":"val",
+      "href":"2",
+      "html":"2"
+    },{
+      "class":"val",
+      "href":"3",
+      "html":"3"
+    },{
+      "class":"equal tall",
+      "href":"",
+      "html":"="
+    },{
+      "class":"val wide shift",
+      "href":"0",
+      "html":"0"
+    },{
+      "class":"val shift",
+      "href":".",
+      "html":"."
+    }]
+}

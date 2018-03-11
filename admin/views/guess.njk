@@ -1,0 +1,38 @@
+{% extends 'layout.njk' %}
+{% block content %}
+  <div class="content ani w90 well">
+  <h2 class="text-center">{{title|capitalize}}</h2>
+  <h3 class="text-center betweenVal">Enter min and max numbers</h3>
+  <h5 class="text-center gc hidden"><span class="guessCount">0</span>/10</h5>
+  <div class="guessCubes"></div>
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <input type="text" class="guessField form-control text-center hidden">
+    </div>
+  </div>
+  <div class="row minMax">
+    <div class="col-md-4 col-md-offset-2">
+      <h4 class="text-center">min</h4>
+      <input type="text" class="min init form-control text-center" value="10" placeholder="10">
+    </div>
+    <div class="col-md-4">
+      <h4 class="text-center">max</h4>
+      <input type="text" class="max init form-control text-center" value="100" placeholder="100">
+    </div>
+  </div>
+  <h4 class="guesses text-center"></h4>
+  <div id="keyboard" class="mb80 hidden"><div class="row1 row text-center"></div></div>
+    <div class="row">
+      <div class="col-md-3 col-md-offset-3">
+        <input type="button" value="Submit guess" class="guessSubmit btn btn-success btn-block mb80" disabled>
+      </div>
+      <div class="col-md-3 startIt">
+        <button type="text" class="startGame btn btn-success btn-block">Start game</button>
+      </div>
+      <div class="col-md-3 hidden newGame">
+        <button type="text" class="btn btn-success btn-block" onclick="location.reload()">Start new game</button>
+      </div>
+  </div>
+  <h4 class="lowOrHi text-center"></h4>
+</div>
+{% endblock %}

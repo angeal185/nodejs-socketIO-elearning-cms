@@ -1,0 +1,53 @@
+{% import "macros/macros.njk" as macro %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <title>{{title}}</title>
+    {{macro.css(s="bootstrap.min")}}
+    {{macro.css(s="style")}}
+    {% block styles %}{% endblock %}
+  </head>
+  <body>
+    {% include "includes/loader.njk" %}
+
+    {% include "includes/menu.njk" %}
+    <div class="main">
+      {% include "includes/head.njk" %}
+      {% block content %}{% endblock %}
+      {% include "includes/volume.njk" %}
+    </div>
+    {{macro.toTop()}}
+    {{macro.js(s="jquery.min")}}
+    {{macro.js(s="bootstrap.min")}}
+    {{macro.js(s="sortable")}}
+    {{macro.js(s="sound")}}
+    {{macro.js(s="Chart.min")}}
+    {{macro.jsT(s="/siofu/client")}}
+    {{macro.jsT(s="/socket.io/socket.io")}}
+    {{macro.js(s="shared")}}
+
+{%block scriptsPre%}{% endblock %}
+
+  {% if title === "dash" %}
+      {{macro.js(s="quiz")}}
+    {% elif title === "flashcard" %}
+      {{macro.js(s="flashcard")}}
+    {% elif title === "test" %}
+      {{macro.js(s="test")}}
+    {% elif title === "memory" %}
+      {{macro.js(s="memory")}}
+    {% elif title === "guess the number" %}
+      {{macro.js(s="guess")}}
+    {% elif title === "plus" %}
+      {{macro.js(s="plus")}}
+    {% elif title === "subtract" %}
+      {{macro.js(s="subtract")}}
+  {% endif %}
+
+    <script></script>
+    {%block scripts%}{% endblock %}
+  </body>
+</html>

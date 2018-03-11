@@ -1,0 +1,1129 @@
+{
+  "colors": [{
+      "src": "colors/red.wav",
+      "id": "red"
+    },
+    {
+      "src": "colors/yellow.wav",
+      "id": "yellow"
+    },
+    {
+      "src": "colors/pink.wav",
+      "id": "pink"
+    },
+    {
+      "src": "colors/orange.wav",
+      "id": "orange"
+    },
+    {
+      "src": "colors/purple.wav",
+      "id": "purple"
+    },
+    {
+      "src": "colors/blue.wav",
+      "id": "blue"
+    },
+    {
+      "src": "colors/brown.wav",
+      "id": "brown"
+    },
+    {
+      "src": "colors/black.wav",
+      "id": "black"
+    },
+    {
+      "src": "colors/white.wav",
+      "id": "white"
+    },
+    {
+      "src": "colors/grey.wav",
+      "id": "grey"
+    },
+    {
+      "src": "colors/green.wav",
+      "id": "green"
+    },
+    {
+      "src": "correct.wav",
+      "id": "correct"
+    },
+    {
+      "src": "incorrect.wav",
+      "id": "incorrect"
+    }
+  ],
+  "body": [{
+      "src": "body/ankle.wav",
+      "id": "ankle"
+    },
+    {
+      "src": "body/arm.wav",
+      "id": "arm"
+    },
+    {
+      "src": "body/back.wav",
+      "id": "back"
+    },
+    {
+      "src": "body/chest.wav",
+      "id": "chest"
+    },
+    {
+      "src": "body/ear.wav",
+      "id": "ear"
+    },
+    {
+      "src": "body/elbow.wav",
+      "id": "elbow"
+    },
+    {
+      "src": "body/eye.wav",
+      "id": "eye"
+    },
+    {
+      "src": "body/eyebrow.wav",
+      "id": "eyebrow"
+    },
+    {
+      "src": "body/face.wav",
+      "id": "face"
+    },
+    {
+      "src": "body/finger.wav",
+      "id": "finger"
+    },
+    {
+      "src": "body/fingernail.wav",
+      "id": "fingernail"
+    },
+    {
+      "src": "body/foot.wav",
+      "id": "foot"
+    },
+    {
+      "src": "body/hair.wav",
+      "id": "hair"
+    },
+    {
+      "src": "body/hand.wav",
+      "id": "hand"
+    },
+    {
+      "src": "body/head.wav",
+      "id": "head"
+    },
+    {
+      "src": "body/knee.wav",
+      "id": "knee"
+    },
+    {
+      "src": "body/leg.wav",
+      "id": "leg"
+    },
+    {
+      "src": "body/lips.wav",
+      "id": "lips"
+    },
+    {
+      "src": "body/mouth.wav",
+      "id": "mouth"
+    },
+    {
+      "src": "body/neck.wav",
+      "id": "neck"
+    },
+    {
+      "src": "body/nose.wav",
+      "id": "nose"
+    },
+    {
+      "src": "body/shoulder.wav",
+      "id": "shoulder"
+    },
+    {
+      "src": "body/stomach.wav",
+      "id": "stomach"
+    },
+    {
+      "src": "body/teeth.wav",
+      "id": "teeth"
+    },
+    {
+      "src": "body/toe.wav",
+      "id": "toe"
+    },
+    {
+      "src": "body/toenail.wav",
+      "id": "toenail"
+    },
+    {
+      "src": "body/tongue.wav",
+      "id": "tongue"
+    },
+    {
+      "src": "body/waist.wav",
+      "id": "waist"
+    },
+    {
+      "src": "body/wrist.wav",
+      "id": "wrist"
+    },
+    {
+      "src": "correct.wav",
+      "id": "correct"
+    },
+    {
+      "src": "incorrect.wav",
+      "id": "incorrect"
+    }
+  ],
+  "animals": [{
+      "src": "animals/ant.wav",
+      "id": "ant"
+    },
+    {
+      "src": "animals/bear.wav",
+      "id": "bear"
+    },
+    {
+      "src": "animals/bee.wav",
+      "id": "bee"
+    },
+    {
+      "src": "animals/butterfly.wav",
+      "id": "butterfly"
+    },
+    {
+      "src": "animals/camel.wav",
+      "id": "camel"
+    },
+    {
+      "src": "animals/cat.wav",
+      "id": "cat"
+    },
+    {
+      "src": "animals/cow.wav",
+      "id": "cow"
+    },
+    {
+      "src": "animals/crocodile.wav",
+      "id": "crocodile"
+    },
+    {
+      "src": "animals/deer.wav",
+      "id": "deer"
+    },
+    {
+      "src": "animals/dog.wav",
+      "id": "dog"
+    },
+    {
+      "src": "animals/dragonfly.wav",
+      "id": "dragonfly"
+    },
+    {
+      "src": "animals/elephant.wav",
+      "id": "elephant"
+    },
+    {
+      "src": "animals/elk.wav",
+      "id": "elk"
+    },
+    {
+      "src": "animals/fly.wav",
+      "id": "fly"
+    },
+    {
+      "src": "animals/fox.wav",
+      "id": "fox"
+    },
+    {
+      "src": "animals/frog.wav",
+      "id": "frog"
+    },
+    {
+      "src": "animals/giraffe.wav",
+      "id": "giraffe"
+    },
+    {
+      "src": "animals/goose.wav",
+      "id": "goose"
+    },
+    {
+      "src": "animals/grasshopper.wav",
+      "id": "grasshopper"
+    },
+    {
+      "src": "animals/hen.wav",
+      "id": "hen"
+    },
+    {
+      "src": "animals/horse.wav",
+      "id": "horse"
+    },
+    {
+      "src": "animals/kangaroo.wav",
+      "id": "kangaroo"
+    },
+    {
+      "src": "animals/ladybird.wav",
+      "id": "ladybird"
+    },
+    {
+      "src": "animals/monkey.wav",
+      "id": "monkey"
+    },
+    {
+      "src": "animals/mosquito.wav",
+      "id": "mosquito"
+    },
+    {
+      "src": "animals/mouse.wav",
+      "id": "mouse"
+    },
+    {
+      "src": "animals/owl.wav",
+      "id": "owl"
+    },
+    {
+      "src": "animals/pig.wav",
+      "id": "pig"
+    },
+    {
+      "src": "animals/rabbit.wav",
+      "id": "rabbit"
+    },
+    {
+      "src": "animals/rooster.wav",
+      "id": "rooster"
+    },
+    {
+      "src": "animals/sheep.wav",
+      "id": "sheep"
+    },
+    {
+      "src": "animals/turtle.wav",
+      "id": "turtle"
+    },
+    {
+      "src": "animals/wolf.wav",
+      "id": "wolf"
+    },
+    {
+      "src": "animals/worm.wav",
+      "id": "worm"
+    },
+    {
+      "src": "correct.wav",
+      "id": "correct"
+    },
+    {
+      "src": "incorrect.wav",
+      "id": "incorrect"
+    }
+  ],
+  "fruit": [{
+      "src": "fruit/apple.wav",
+      "id": "apple"
+    },
+    {
+      "src": "fruit/avocado.wav",
+      "id": "avocado"
+    },
+    {
+      "src": "fruit/banana.wav",
+      "id": "banana"
+    },
+    {
+      "src": "fruit/berries.wav",
+      "id": "berries"
+    },
+    {
+      "src": "fruit/cherries.wav",
+      "id": "cherries"
+    },
+    {
+      "src": "fruit/coconut.wav",
+      "id": "coconut"
+    },
+    {
+      "src": "fruit/fig.wav",
+      "id": "fig"
+    },
+    {
+      "src": "fruit/grapes.wav",
+      "id": "grapes"
+    },
+    {
+      "src": "fruit/kiwifruit.wav",
+      "id": "kiwifruit"
+    },
+    {
+      "src": "fruit/lemon.wav",
+      "id": "lemon"
+    },
+    {
+      "src": "fruit/mango.wav",
+      "id": "mango"
+    },
+    {
+      "src": "fruit/melon.wav",
+      "id": "melon"
+    },
+    {
+      "src": "fruit/orange.wav",
+      "id": "orange"
+    },
+    {
+      "src": "fruit/peach.wav",
+      "id": "peach"
+    },
+    {
+      "src": "fruit/pear.wav",
+      "id": "pear"
+    },
+    {
+      "src": "fruit/pineapple.wav",
+      "id": "pineapple"
+    },
+    {
+      "src": "fruit/plum.wav",
+      "id": "plum"
+    },
+    {
+      "src": "fruit/strawberry.wav",
+      "id": "strawberry"
+    },
+    {
+      "src": "fruit/tangerine.wav",
+      "id": "tangerine"
+    },
+    {
+      "src": "fruit/watermelon.wav",
+      "id": "watermelon"
+    }, {
+      "src": "correct.wav",
+      "id": "correct"
+    },
+    {
+      "src": "incorrect.wav",
+      "id": "incorrect"
+    }
+  ],
+  "vegetables": [{
+      "src": "vegetables/artichoke.wav",
+      "id": "artichoke"
+    },
+    {
+      "src": "vegetables/asparagus.wav",
+      "id": "asparagus"
+    },
+    {
+      "src": "vegetables/beans.wav",
+      "id": "beans"
+    },
+    {
+      "src": "vegetables/beetroot.wav",
+      "id": "beetroot"
+    },
+    {
+      "src": "vegetables/broccoli.wav",
+      "id": "broccoli"
+    },
+    {
+      "src": "vegetables/cabbage.wav",
+      "id": "cabbage"
+    },
+    {
+      "src": "vegetables/capsicum.wav",
+      "id": "capsicum"
+    },
+    {
+      "src": "vegetables/carrot.wav",
+      "id": "carrot"
+    },
+    {
+      "src": "vegetables/cauliflower.wav",
+      "id": "cauliflower"
+    },
+    {
+      "src": "vegetables/celery.wav",
+      "id": "celery"
+    },
+    {
+      "src": "vegetables/corn.wav",
+      "id": "corn"
+    },
+    {
+      "src": "vegetables/cucumber.wav",
+      "id": "cucumber"
+    },
+    {
+      "src": "vegetables/eggplant.wav",
+      "id": "eggplant"
+    },
+    {
+      "src": "vegetables/lettuce.wav",
+      "id": "lettuce"
+    },
+    {
+      "src": "vegetables/mushroom.wav",
+      "id": "mushroom"
+    },
+    {
+      "src": "vegetables/onion.wav",
+      "id": "onion"
+    },
+    {
+      "src": "vegetables/peas.wav",
+      "id": "peas"
+    },
+    {
+      "src": "vegetables/potato.wav",
+      "id": "potato"
+    },
+    {
+      "src": "vegetables/pumpkin.wav",
+      "id": "pumpkin"
+    },
+    {
+      "src": "vegetables/sprouts.wav",
+      "id": "sprouts"
+    },
+    {
+      "src": "vegetables/tomato.wav",
+      "id": "tomato"
+    }, {
+      "src": "correct.wav",
+      "id": "correct"
+    },
+    {
+      "src": "incorrect.wav",
+      "id": "incorrect"
+    }
+  ],
+  "letters": [{
+      "src": "letters/a.wav",
+      "id": "a"
+    },
+    {
+      "src": "letters/b.wav",
+      "id": "b"
+    },
+    {
+      "src": "letters/c.wav",
+      "id": "c"
+    },
+    {
+      "src": "letters/d.wav",
+      "id": "d"
+    },
+    {
+      "src": "letters/e.wav",
+      "id": "e"
+    },
+    {
+      "src": "letters/f.wav",
+      "id": "f"
+    },
+    {
+      "src": "letters/g.wav",
+      "id": "g"
+    },
+    {
+      "src": "letters/h.wav",
+      "id": "h"
+    },
+    {
+      "src": "letters/i.wav",
+      "id": "i"
+    },
+    {
+      "src": "letters/j.wav",
+      "id": "j"
+    },
+    {
+      "src": "letters/k.wav",
+      "id": "k"
+    },
+    {
+      "src": "letters/l.wav",
+      "id": "l"
+    },
+    {
+      "src": "letters/m.wav",
+      "id": "m"
+    },
+    {
+      "src": "letters/n.wav",
+      "id": "n"
+    },
+    {
+      "src": "letters/o.wav",
+      "id": "o"
+    },
+    {
+      "src": "letters/p.wav",
+      "id": "p"
+    },
+    {
+      "src": "letters/q.wav",
+      "id": "q"
+    },
+    {
+      "src": "letters/r.wav",
+      "id": "r"
+    },
+    {
+      "src": "letters/s.wav",
+      "id": "s"
+    },
+    {
+      "src": "letters/t.wav",
+      "id": "t"
+    },
+    {
+      "src": "letters/u.wav",
+      "id": "u"
+    },
+    {
+      "src": "letters/v.wav",
+      "id": "v"
+    },
+    {
+      "src": "letters/w.wav",
+      "id": "w"
+    },
+    {
+      "src": "letters/x.wav",
+      "id": "x"
+    },
+    {
+      "src": "letters/y.wav",
+      "id": "y"
+    },
+    {
+      "src": "letters/z.wav",
+      "id": "z"
+    }
+  ],
+  "numbers": [{
+      "src": "numbers/1.wav",
+      "id": "1"
+    },
+    {
+      "src": "numbers/2.wav",
+      "id": "2"
+    },
+    {
+      "src": "numbers/3.wav",
+      "id": "3"
+    },
+    {
+      "src": "numbers/4.wav",
+      "id": "4"
+    },
+    {
+      "src": "numbers/5.wav",
+      "id": "5"
+    },
+    {
+      "src": "numbers/6.wav",
+      "id": "6"
+    },
+    {
+      "src": "numbers/7.wav",
+      "id": "7"
+    },
+    {
+      "src": "numbers/8.wav",
+      "id": "8"
+    },
+    {
+      "src": "numbers/9.wav",
+      "id": "9"
+    },
+    {
+      "src": "numbers/10.wav",
+      "id": "10"
+    },
+    {
+      "src": "numbers/11.wav",
+      "id": "11"
+    },
+    {
+      "src": "numbers/12.wav",
+      "id": "12"
+    },
+    {
+      "src": "numbers/13.wav",
+      "id": "13"
+    },
+    {
+      "src": "numbers/14.wav",
+      "id": "14"
+    },
+    {
+      "src": "numbers/15.wav",
+      "id": "15"
+    },
+    {
+      "src": "numbers/16.wav",
+      "id": "16"
+    },
+    {
+      "src": "numbers/17.wav",
+      "id": "17"
+    },
+    {
+      "src": "numbers/18.wav",
+      "id": "18"
+    },
+    {
+      "src": "numbers/19.wav",
+      "id": "19"
+    },
+    {
+      "src": "numbers/20.wav",
+      "id": "20"
+    },
+    {
+      "src": "numbers/30.wav",
+      "id": "30"
+    },
+    {
+      "src": "numbers/40.wav",
+      "id": "40"
+    },
+    {
+      "src": "numbers/50.wav",
+      "id": "50"
+    },
+    {
+      "src": "numbers/60.wav",
+      "id": "60"
+    },
+    {
+      "src": "numbers/70.wav",
+      "id": "70"
+    },
+    {
+      "src": "numbers/80.wav",
+      "id": "80"
+    },
+    {
+      "src": "numbers/90.wav",
+      "id": "90"
+    },
+    {
+      "src": "numbers/100.wav",
+      "id": "100"
+    },
+    {
+      "src": "numbers/1000.wav",
+      "id": "1000"
+    },
+    {
+      "src": "numbers/1000000.wav",
+      "id": "1000000"
+    },
+    {
+      "src": "correct.wav",
+      "id": "correct"
+    },
+    {
+      "src": "incorrect.wav",
+      "id": "incorrect"
+    }
+  ],
+  "items": [{
+      "src": "items/alarm-clock.wav",
+      "id": "alarm-clock"
+    },
+    {
+      "src": "items/armchair.wav",
+      "id": "armchair"
+    },
+    {
+      "src": "items/ashtray.wav",
+      "id": "ashtray"
+    },
+    {
+      "src": "items/bed.wav",
+      "id": "bed"
+    },
+    {
+      "src": "items/bedside-table.wav",
+      "id": "bedside-table"
+    },
+    {
+      "src": "items/blanket.wav",
+      "id": "blanket"
+    },
+    {
+      "src": "items/blinds.wav",
+      "id": "blinds"
+    },
+    {
+      "src": "items/book-case.wav",
+      "id": "book-case"
+    },
+    {
+      "src": "items/book-shelf.wav",
+      "id": "book-shelf"
+    },
+    {
+      "src": "items/bunk-beds.wav",
+      "id": "bunk-beds"
+    },
+    {
+      "src": "items/button.wav",
+      "id": "button"
+    },
+    {
+      "src": "items/candle.wav",
+      "id": "candle"
+    },
+    {
+      "src": "items/carpet.wav",
+      "id": "carpet"
+    },
+    {
+      "src": "items/chair.wav",
+      "id": "chair"
+    },
+    {
+      "src": "items/clock.wav",
+      "id": "clock"
+    },
+    {
+      "src": "items/clothes-rack.wav",
+      "id": "clothes-rack"
+    },
+    {
+      "src": "items/coat-stand.wav",
+      "id": "coat-stand"
+    },
+    {
+      "src": "items/coffee-table.wav",
+      "id": "coffee-table"
+    },
+    {
+      "src": "items/counter.wav",
+      "id": "counter"
+    },
+    {
+      "src": "items/cupboard.wav",
+      "id": "cupboard"
+    },
+    {
+      "src": "items/curtains.wav",
+      "id": "curtains"
+    },
+    {
+      "src": "items/cutlery.wav",
+      "id": "cutlery"
+    },
+    {
+      "src": "items/desk.wav",
+      "id": "desk"
+    },
+    {
+      "src": "items/drawers.wav",
+      "id": "drawers"
+    },
+    {
+      "src": "items/dresser.wav",
+      "id": "dresser"
+    },
+    {
+      "src": "items/fire-place.wav",
+      "id": "fire-place"
+    },
+    {
+      "src": "items/gate.wav",
+      "id": "gate"
+    },
+    {
+      "src": "items/hanger.wav",
+      "id": "hanger"
+    },
+    {
+      "src": "items/heater.wav",
+      "id": "heater"
+    },
+    {
+      "src": "items/kitchen-table.wav",
+      "id": "kitchen-table"
+    },
+    {
+      "src": "items/ladder.wav",
+      "id": "ladder"
+    },
+    {
+      "src": "items/lamp.wav",
+      "id": "lamp"
+    },
+    {
+      "src": "items/light-bulb.wav",
+      "id": "light-bulb"
+    },
+    {
+      "src": "items/light-switch.wav",
+      "id": "light-switch"
+    },
+    {
+      "src": "items/lighter.wav",
+      "id": "lighter"
+    },
+    {
+      "src": "items/matches.wav",
+      "id": "matches"
+    },
+    {
+      "src": "items/mirror.wav",
+      "id": "mirror"
+    },
+    {
+      "src": "items/needle.wav",
+      "id": "needle"
+    },
+    {
+      "src": "items/paint-brush.wav",
+      "id": "paint-brush"
+    },
+    {
+      "src": "items/painting.wav",
+      "id": "painting"
+    },
+    {
+      "src": "items/pillow.wav",
+      "id": "pillow"
+    },
+    {
+      "src": "items/pin.wav",
+      "id": "pin"
+    },
+    {
+      "src": "items/pool-table.wav",
+      "id": "pool-table"
+    },
+    {
+      "src": "items/power-drill.wav",
+      "id": "power-drill"
+    },
+    {
+      "src": "items/power-plug.wav",
+      "id": "power-plug"
+    },
+    {
+      "src": "items/remote.wav",
+      "id": "remote"
+    },
+    {
+      "src": "items/rug.wav",
+      "id": "rug"
+    },
+    {
+      "src": "items/screw.wav",
+      "id": "screw"
+    },
+    {
+      "src": "items/shelf.wav",
+      "id": "shelf"
+    },
+    {
+      "src": "items/shelving.wav",
+      "id": "shelving"
+    },
+    {
+      "src": "items/sliding-door.wav",
+      "id": "sliding-door"
+    },
+    {
+      "src": "items/sofa-bed.wav",
+      "id": "sofa-bed"
+    },
+    {
+      "src": "items/sofa.wav",
+      "id": "sofa"
+    },
+    {
+      "src": "items/speakers.wav",
+      "id": "speakers"
+    },
+    {
+      "src": "items/stairs.wav",
+      "id": "stairs"
+    },
+    {
+      "src": "items/stool.wav",
+      "id": "stool"
+    },
+    {
+      "src": "items/tape.wav",
+      "id": "tape"
+    },
+    {
+      "src": "items/thermometer.wav",
+      "id": "thermometer"
+    },
+    {
+      "src": "items/thumbtack.wav",
+      "id": "thumbtack"
+    },
+    {
+      "src": "items/window.wav",
+      "id": "window"
+    },
+    {
+      "src": "correct.wav",
+      "id": "correct"
+    },
+    {
+      "src": "incorrect.wav",
+      "id": "incorrect"
+    }
+  ],
+  "cooked_food": [{
+      "src": "cooked-food/Sandwich.wav",
+      "id": "Sandwich"
+    },
+    {
+      "src": "cooked-food/baked-beans.wav",
+      "id": "baked-beans"
+    },
+    {
+      "src": "cooked-food/barbecue-chicken.wav",
+      "id": "barbecue-chicken"
+    },
+    {
+      "src": "cooked-food/barbecue-ribs.wav",
+      "id": "barbecue-ribs"
+    },
+    {
+      "src": "cooked-food/bread.wav",
+      "id": "bread"
+    },
+    {
+      "src": "cooked-food/cake.wav",
+      "id": "cake"
+    },
+    {
+      "src": "cooked-food/casserole.wav",
+      "id": "casserole"
+    },
+    {
+      "src": "cooked-food/chicken-kiev.wav",
+      "id": "chicken-kiev"
+    },
+    {
+      "src": "cooked-food/chicken-parmigiana.wav",
+      "id": "chicken-parmigiana"
+    },
+    {
+      "src": "cooked-food/chicken-schnitzel.wav",
+      "id": "chicken-schnitzel"
+    },
+    {
+      "src": "cooked-food/chips.wav",
+      "id": "chips"
+    },
+    {
+      "src": "cooked-food/cookies.wav",
+      "id": "cookies"
+    },
+    {
+      "src": "cooked-food/dim-sim.wav",
+      "id": "dim-sim"
+    },
+    {
+      "src": "cooked-food/fish-fingers.wav",
+      "id": "fish-fingers"
+    },
+    {
+      "src": "cooked-food/fried-chicken.wav",
+      "id": "fried-chicken"
+    },
+    {
+      "src": "cooked-food/fried-fish.wav",
+      "id": "fried-fish"
+    },
+    {
+      "src": "cooked-food/garlic-bread.wav",
+      "id": "garlic-bread"
+    },
+    {
+      "src": "cooked-food/hamburger.wav",
+      "id": "hamburger"
+    },
+    {
+      "src": "cooked-food/hotdog.wav",
+      "id": "hotdog"
+    },
+    {
+      "src": "cooked-food/lasagna.wav",
+      "id": "lasagna"
+    },
+    {
+      "src": "cooked-food/meat-pie.wav",
+      "id": "meat-pie"
+    },
+    {
+      "src": "cooked-food/pasta.wav",
+      "id": "pasta"
+    },
+    {
+      "src": "cooked-food/pasty.wav",
+      "id": "pasty"
+    },
+    {
+      "src": "cooked-food/pie.wav",
+      "id": "pie"
+    },
+    {
+      "src": "cooked-food/pizza.wav",
+      "id": "pizza"
+    },
+    {
+      "src": "cooked-food/ravioli.wav",
+      "id": "ravioli"
+    },
+    {
+      "src": "cooked-food/salad.wav",
+      "id": "salad"
+    },
+    {
+      "src": "cooked-food/sausage-roll.wav",
+      "id": "sausage-roll"
+    },
+    {
+      "src": "cooked-food/soup.wav",
+      "id": "soup"
+    },
+    {
+      "src": "cooked-food/steak-sandwich.wav",
+      "id": "steak-sandwich"
+    },
+    {
+      "src": "cooked-food/steak.wav",
+      "id": "steak"
+    },
+    {
+      "src": "cooked-food/stew.wav",
+      "id": "stew"
+    },
+    {
+      "src": "cooked-food/chicken-nuggets.wav",
+      "id": "chicken-nuggets"
+    },
+    {
+      "src": "correct.wav",
+      "id": "correct"
+    },
+    {
+      "src": "incorrect.wav",
+      "id": "incorrect"
+    }
+  ]
+}

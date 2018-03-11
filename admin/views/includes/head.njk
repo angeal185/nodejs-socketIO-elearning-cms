@@ -1,0 +1,35 @@
+<header class="header">
+  <a class="menu-btn menu-link" id="nav-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </a>
+  <div class="right-title">
+    {% if title === "dash" %}
+      <div class="totalDiv">
+        Total Questions:
+        <span id="tque"></span>
+      </div>
+    {% endif %}
+    <li class="icon-users usrOps"></li>
+    <div class="user-menu">
+      <ul>
+        {% for item in config.users %}
+          <li class="user-change">{{item}}</li>
+        {% endfor %}
+
+      </ul>
+    </div>
+    <li class="icon-volume-up volOps"></li>
+    <li class="icon-cog-alt quickOps"></li>
+    <div class="quick-menu">
+      <ul>
+        {% for item in config.quickNav %}
+          <li class="cat-change">{{item}}</li>
+        {% endfor %}
+
+      </ul>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+</header>

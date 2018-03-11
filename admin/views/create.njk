@@ -1,0 +1,192 @@
+{% extends 'layout.njk' %}
+{% block content %}
+<div class="w90 content ani">
+  <h3 id="currentMode" class="text-center"></h3>
+  <div id="sort">
+    {% for i in data %}
+    <div class="row well">
+      <div class="col-md-8 ans">
+        <h3>{{i.answer}}</h3>
+      </div>
+
+      <div class="col-md-4 rCol">
+        <button class="lgBtn btn btn-success">Show</button>
+        <button class="rmBtn btn btn-success">Remove</button>
+      </div>
+
+      <div class="lg">
+        <div class="col-md-4">
+          <label>id</label>
+          <input type="text" class="form-control ID" value="{{i.id}}">
+        </div>
+        <div class="col-md-4">
+          <label>question</label>
+          <input type="text" class="form-control qA" value="{{i.question}}">
+        </div>
+        <div class="col-md-4">
+          <label>image</label>
+          <input type="text" class="form-control imgUrl" value="{{i.img}}">
+        </div>
+
+        <h5 class="text-center">options</h5>
+        {% for e in i.options %}
+        <div class="col-md-3">
+          <input type="text" class="form-control options" value="{{e.a}}">
+        </div>
+        <div class="col-md-3">
+          <input type="text" class="form-control options" value="{{e.b}}">
+        </div>
+        <div class="col-md-3">
+          <input type="text" class="form-control options" value="{{e.c}}">
+        </div>
+        <div class="col-md-3">
+          <input type="text" class="form-control options" value="{{e.d}}">
+        </div>
+        {% endfor %}
+        <div class="col-md-4">
+          <label>answer</label>
+          <input type="text" class="form-control answer" value="{{i.answer}}">
+        </div>
+        <div class="col-md-4">
+          <label>score</label>
+          <input type="text" class="form-control score" value="{{i.score}}">
+        </div>
+        <div class="col-md-4">
+          <label>status</label>
+          <input type="text" class="form-control status" value="{{i.status}}">
+        </div>
+        <h5 class="text-center">Audio</h5>
+        <div class="col-md-6">
+          <label>audio file</label>
+          <input type="text" class="form-control audioFile" value="">
+        </div>
+        <div class="col-md-6">
+          <label>audio id</label>
+          <input type="text" class="form-control audioId" value="">
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+<div class="row">
+  <div class="col-md-6">
+    <button id="addBtn" class="btn btn-success btn-block">Add new</button>
+  </div>
+  <div class="col-md-6">
+    <button id="saveBtn" class="btn btn-success btn-block">Commit</button>
+  </div>
+</div>
+
+
+</div>
+{% endblock %}
+{%block scripts%}
+<script>
+var socket = io.connect();
+var container = document.getElementById("sort");
+var randomArr = [];
+
+$.fn.extend({
+      toggleHtml: function(a, b){
+          return this.html(this.html() == b ? a : b);
+      }
+  });
+
+function tglBtn(){
+  $(".lgBtn").click(function() {
+      $(this).parent('div').next('.lg').toggle('slow');
+      $(this).toggleHtml('show','hide');
+  });
+}
+
+function bindKey(){
+  $( ".answer" ).bind( "keyup", function() {
+    console.log('ok');
+    $(this).parent().parent().siblings('.ans').children('h3').html(this.value);
+  });
+}
+
+function updateId(){
+  $(".well").each(function(i) {
+    $(this).find( ".ID" ).val(i+1);
+  });
+}
+
+function removeitem(){
+  $('.rmBtn').click(function(event) {
+    $(this).parent('.rCol').parent('.well').remove();
+    updateId();
+  });
+}
+
+removeitem();
+tglBtn();
+bindKey();
+
+$('.answer').each(function(e,i) {
+  randomArr.push(i.value)
+});
+
+$('#addBtn').click(function(event) {
+  var tpl = $('.well')[0].outerHTML;
+  $(tpl).appendTo('#sort');
+  $(".well div h3:last").html('new');
+  $(".well:last").find( ".answer" ).val('');
+  $(".well:last").find( ".imgUrl,.audioFile" ).val($('#currentMode').html()+"/");
+  $(".well:last").find( ".options" ).each(function() {
+    $(this).val(randomArr[Math.floor(Math.random() * randomArr.length)]);
+  });
+  $('.lgBtn,.rmBtn,.answer').off();
+  removeitem();
+  tglBtn();
+  updateId();
+  bindKey();
+});
+
+var sort = Sortable.create(container, {
+    animation: 150,
+    handle: ".well",
+    draggable: ".well",
+    onUpdate: function (evt){
+       var item = evt.item;
+    },
+    onSort: function (evt) {
+		updateId();
+	  }
+});
+
+socket.emit('getData');
+socket.addEventListener("quiz", function (response) {
+  var res = response.quizData;
+  $('#currentMode').html(res.mode);
+  $('.audioFile').each(function(index, el) {
+    let file = $('.imgUrl').val().slice(0,-2);
+    $(this).parent().next().children('.audioId').val(file.slice($('#currentMode').html().length + 1,-2));
+    this.value = file.slice(0,-1) + 'wav';
+  });
+  $('#saveBtn').click(function() {
+    var arr1 = [];
+    $(".lg").each(function(i, el) {
+      arr1.push({
+          "id": JSON.parse($(el).children('div').children('.ID').val()),
+          "question": $(el).children('div').children('.qA').val(),
+          "img": $(el).children('div').children('.imgUrl').val(),
+          "options": [
+              {
+                  "a": $(el).children('div').children('.options').eq(0).val(),
+                  "b": $(el).children('div').children('.options').eq(1).val(),
+                  "c": $(el).children('div').children('.options').eq(2).val(),
+                  "d": $(el).children('div').children('.options').eq(3).val()
+              }
+          ],
+          "answer": $(el).children('div').children('.answer').val(),
+          "score": JSON.parse($(el).children('div').children('.score').val()),
+          "status": $(el).children('div').children('.status').val()
+        })
+    });
+    socket.emit('updateItems', {"data":arr1,"mode":$('#currentMode').html()});
+  });
+});
+</script>
+{% endblock %}

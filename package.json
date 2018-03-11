@@ -1,0 +1,22 @@
+{
+  "name": "nodejs-socketIO-elearning-cms",
+  "version": "1.0.0",
+  "description": "e-learning cms created with nodejs and socketIO",
+  "main": "admin/app/bin/socketIO",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ben eaves",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "express": "^4.16.2",
+    "nunjucks": "^3.0.1",
+    "socket.io": "^2.0.4"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^4.1.0",
+    "require-dir": "^1.0.0"
+  }
+}
