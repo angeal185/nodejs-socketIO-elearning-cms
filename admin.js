@@ -2,12 +2,10 @@ const express = require('express'),
 SocketIOFileUpload = require('socketio-file-upload'),
 path = require('path'),
 bodyParser = require('body-parser'),
-passport = require('passport'),
 config = require('./admin/app/config/config'),
 minifyOutput = require('./admin/app/modules/minifyOutput'),
 nunjucks = require('nunjucks'),
-index = require('./admin/app/routes/index'),
-app = express().use(SocketIOFileUpload.router);
+index = require('./admin/app/routes/index');
 
 // view engine setup
 app.set('view engine', 'njk');
@@ -31,10 +29,6 @@ if (config.app.minifyOutput === true) {
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'admin/public')));
-//app.use(express.static(path.join(__dirname, 'admin/public/elements')));
-app.use(require('express-session')({ secret: 'keyboard cat', resave: false, saveUninitialized: false }));
-app.use(passport.initialize());
-app.use(passport.session());
 
 app.use('/', index);
 
