@@ -5,8 +5,8 @@ bodyParser = require('body-parser'),
 config = require('./admin/app/config/config'),
 minifyOutput = require('./admin/app/modules/minifyOutput'),
 nunjucks = require('nunjucks'),
-index = require('./admin/app/routes/index');
-
+index = require('./admin/app/routes/index'),
+app = express();
 // view engine setup
 app.set('view engine', 'njk');
 
