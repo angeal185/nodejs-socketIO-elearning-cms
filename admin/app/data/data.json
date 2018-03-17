@@ -3631,11 +3631,11 @@
             "wrong": 211
         },
         "plus": {
-            "right": 9,
-            "wrong": 3
+            "right": 12,
+            "wrong": 4
         },
         "subtract": {
-            "right": 44,
+            "right": 51,
             "wrong": 200
         },
         "multi": {
@@ -3658,6 +3658,6 @@
         }
     },
     "language": "en",
-    "mode": "body",
+    "mode": "animals",
     "user": "dandan"
 }

@@ -1,61 +1,7 @@
 <nav id="menu">
   <ul class="mobile-nav" id="mobile">
-    <li class="menu-item menu-item-has-children">
-      <a class="menuHead blink">English
-        <i class="icon-right-open"></i>
-      </a>
-
-      <ul class="sub-menu">
-        <li class="menu-item">
-          <a clas="blink" href="/">Multiple choice</a>
-        </li>
-        <li class="menu-item">
-          <a clas="blink" href="/flashcard">Flashcards</a>
-        </li>
-        <li class="menu-item">
-          <a clas="blink" href="/memory">Memory</a>
-        </li>
-        <li class="menu-item">
-          <a clas="blink" href="/guess">Guess the number</a>
-        </li>
-      </ul>
-    </li>
-
-    <li class="menu-item menu-item-has-children">
-      <a clas="blink" class="menuHead">Math
-        <i class="icon-right-open"></i>
-      </a>
-
-      <ul class="sub-menu">
-        <li class="menu-item">
-          <a clas="blink" href="/plus">Plus</a>
-        </li>
-        <li class="menu-item">
-          <a clas="blink" href="/subtract">subtract</a>
-        </li>
-        <li class="menu-item">
-          <a clas="blink" href="/calculate">Calculate</a>
-        </li>
-        <li class="menu-item">
-          <a clas="blink" href="/test">Test</a>
-        </li>
-      </ul>
-    </li>
-
-    <li class="menu-item">
-      <a class="menuHead blink">Options<i class="icon-right-open"></i></a>
-
-      <ul class="sub-menu">
-        <li class="menu-item">
-          <a clas="blink" href="#">Admin</a>
-        </li>
-        <li class="menu-item">
-          <a clas="blink" href="#">Settings</a>
-        </li>
-        <li class="menu-item">
-          <a clas="blink" href="/admin/create">Create</a>
-        </li>
-      </ul>
-    </li>
+    {{macro.menuItem(x="English",y=config.nav.english)}}
+    {{macro.menuItem(x="Math",y=config.nav.math)}}
+    {{macro.menuItem(x="Settings",y=config.nav.settings,admin=true)}}
   </ul>
 </nav>

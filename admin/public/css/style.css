@@ -613,6 +613,9 @@ margin-bottom: 20px;
 .mt40{
   margin-top: 40px;
 }
+.mt70{
+  margin-top: 70px;
+}
 .pt40{
   padding-top: 40px;
 }
@@ -996,4 +999,26 @@ background: linear-gradient(to bottom, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 1
 .guessWrong {
     background: red;
     box-shadow: 0 0 4px red;
+}
+
+.img-div{
+  text-align: center;
+  height: 250px;
+  width: 250px;
+  margin-left: 125px;
+  background: white;
+  color: black;
+  font-size: 130px;
+  line-height: 1.9;
+}
+
+.m20-center{
+    width: 20%;
+    margin-left: 40%;
+    text-align: center;
+}
+
+.smaller-text{
+  font-size: 62px;
+line-height: 4;
 }

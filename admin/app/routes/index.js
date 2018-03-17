@@ -54,7 +54,6 @@ const express = require('express'),
 
 
 
-
 router.get('/', function(req, res) {
   res.render('index', {
     title: 'dash',
@@ -62,7 +61,14 @@ router.get('/', function(req, res) {
   });
 });
 
-router.get('/admin/create', function(req, res) {
+router.get('/multiple-choice', function(req, res) {
+  res.render('multiple-choice', {
+    title: 'multiple-choice',
+    config: config
+  });
+});
+
+router.get('/create', function(req, res) {
   if ((data.mode)===("colors")) {
   	mode = data.colors;
   } else if ((data.mode)===("body")) {
@@ -85,10 +91,14 @@ router.get('/admin/create', function(req, res) {
   });
 });
 
-router.get('/flashcard', function(req, res) {
-  res.render('flashcard', {
-    title: 'flashcard',
-    config: config
+var flashcard = ['flashcard','times-tables','count']
+
+flashcard.forEach(function(i) {
+  router.get('/'+i, function(req, res) {
+    res.render('flashcard', {
+      title: i,
+      config: config
+    });
   });
 });
 

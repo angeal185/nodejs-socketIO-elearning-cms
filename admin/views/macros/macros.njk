@@ -10,3 +10,16 @@
 {%- macro jsT(s) -%}
 <script src="{{s}}.js"></script>
 {%- endmacro -%}
+{%- macro menuHead(i) -%}
+<a clas="blink" class="menuHead">{{i}}<i class="icon-right-open"></i></a>
+{%- endmacro -%}
+{%- macro menuItem(x,y,admin) -%}
+<li class="menu-item">
+  {{menuHead(i=x)}}
+  <ul class="sub-menu">
+    {% for item in y %}
+      <li class="menu-item"><a clas="blink" href="/{{item}}">{{item|capitalize}}</a></li>
+    {% endfor %}
+  </ul>
+</li>
+{%- endmacro -%}

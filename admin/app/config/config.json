@@ -3,6 +3,11 @@
         "port": 3000,
         "minifyOutput": false
     },
+    "nav":{
+      "english":["multiple-choice","flashcard","memory","guess"],
+      "math":["count","plus","subtract","times-tables","calculate","test"],
+      "settings":["create","settings"]
+      },
     "quickNav": [
         "colors",
         "fruit",
