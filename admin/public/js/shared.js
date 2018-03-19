@@ -35,6 +35,12 @@ function initSlider(){
   });
 }
 
+function addCount(i){
+  $('#slider').css('display', 'none');
+  $('#currentMode').html('count '+i);
+  $('#slider').after('<div class="row text-center"><div class="col-md-4 col-md-offset-2"><input type="text" id="lowEnd" class="form-control text-center"></div><div class="col-md-4"><input type="text" id="highEnd" class="form-control text-center"></div><button class="btn btn-success submt col-md-6 col-md-offset-3">Start</button></div>');
+}
+
 function ToastBuilder(options) {
   // options are optional
   var opts = options || {};
@@ -143,6 +149,8 @@ $(".menu-link").click(function () {
 });
 
 $(".menuHead").click(function () {
+  $(".menuHead").next().fadeOut('slow');
+  $(".icon-down-open").toggleClass("icon-right-open icon-down-open");
   $("i", this).toggleClass("icon-right-open icon-down-open");
   $(this).next().toggle("slow");
 });

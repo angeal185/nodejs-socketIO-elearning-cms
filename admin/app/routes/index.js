@@ -91,7 +91,7 @@ router.get('/create', function(req, res) {
   });
 });
 
-var flashcard = ['flashcard','times-tables','count']
+var flashcard = ['flashcard','times-tables','count','money']
 
 flashcard.forEach(function(i) {
   router.get('/'+i, function(req, res) {

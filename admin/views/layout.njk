@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.ico">
     <title>{{title}}</title>
-    {{macro.css(s="bootstrap.min")}}
     {{macro.css(s="style")}}
     {% block styles %}{% endblock %}
   </head>
@@ -48,6 +47,8 @@
       {{macro.js(s="timesTables")}}
     {% elif title === "count" %}
       {{macro.js(s="count")}}
+    {% elif title === "money" %}
+      {{macro.js(s="money")}}
   {% endif %}
 
     <script></script>

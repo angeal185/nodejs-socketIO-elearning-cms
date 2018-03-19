@@ -5,7 +5,7 @@
     },
     "nav":{
       "english":["multiple-choice","flashcard","memory","guess"],
-      "math":["count","plus","subtract","times-tables","calculate","test"],
+      "math":["count","money","plus","subtract","times-tables","calculate","test"],
       "settings":["create","settings"]
       },
     "quickNav": [
