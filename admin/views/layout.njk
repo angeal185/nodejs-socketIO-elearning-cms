@@ -26,9 +26,7 @@
     {{macro.jsT(s="/siofu/client")}}
     {{macro.jsT(s="/socket.io/socket.io")}}
     {{macro.js(s="shared")}}
-
 {%block scriptsPre%}{% endblock %}
-
   {% if title === "dash" %}
       {{macro.js(s="quiz")}}
     {% elif title === "flashcard" %}
@@ -43,6 +41,8 @@
       {{macro.js(s="plus")}}
     {% elif title === "subtract" %}
       {{macro.js(s="subtract")}}
+    {% elif title === "times" %}
+      {{macro.js(s="times")}}
     {% elif title === "times-tables" %}
       {{macro.js(s="timesTables")}}
     {% elif title === "count" %}
@@ -50,8 +50,6 @@
     {% elif title === "money" %}
       {{macro.js(s="money")}}
   {% endif %}
-
-    <script></script>
     {%block scripts%}{% endblock %}
   </body>
 </html>
