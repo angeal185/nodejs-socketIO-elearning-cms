@@ -11,8 +11,11 @@
   "dependencies": {
     "chalk": "^2.3.0",
     "express": "^4.16.2",
+    "html-minifier": "^3.5.16",
     "nunjucks": "^3.0.1",
-    "socket.io": "^2.0.4"
+    "socket.io": "^2.0.4",
+    "socketio": "^1.0.0",
+    "socketio-file-upload": "^0.6.0"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
