@@ -11,6 +11,9 @@ if ((response.mode)===("colors")) {
 } else if ((response.mode)===("body")) {
   mode = response.body;
   sounds = audio.body
+} else if ((response.mode)===("shapes")) {
+  mode = response.shapes;
+  sounds = audio.shapes
 } else if ((response.mode)===("animals")) {
   mode = response.animals;
   sounds = audio.animals
