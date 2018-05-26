@@ -1,10 +1,12 @@
 const express = require('express'),
-  fs = require('fs'),
-  router = express.Router(),
-  config = require('../config/config'),
-  data = require('../data/data'),
-  modJSON = require('../modules/modJSON');
+fs = require('fs'),
+router = express.Router(),
+config = require('../config/config'),
+data = require('../data/data'),
+modJSON = require('../modules/modJSON');
 
+  var flashcard = ['flashcard','times-tables','count','money'];
+  var toRender = ['multiple-choice','memory','guess','plus','calculate','subtract','test'];
 
   listFiles = function(i) {
     var items = [];
@@ -16,11 +18,8 @@ const express = require('express'),
     var cnt = 1;
 
     fs.readdir("./admin/public/audio/letters", function(err, files) {
-
       if (err) {
-
       console.log(err);
-
       return;
     }
 
@@ -41,9 +40,6 @@ const express = require('express'),
         items2.push(objct);
       });
       //console.log(items2);
-
-
-
       });
   };
 
@@ -61,18 +57,32 @@ router.get('/', function(req, res) {
   });
 });
 
-router.get('/multiple-choice', function(req, res) {
-  res.render('multiple-choice', {
-    title: 'multiple-choice',
-    config: config
+flashcard.forEach(function(i) {
+  router.get('/'+i, function(req, res) {
+    res.render('flashcard', {
+      title: i,
+      config: config
+    });
+  });
+});
+
+toRender.forEach(function(i) {
+  router.get('/'+i, function(req, res) {
+    res.render(i, {
+      title: i,
+      config: config
+    });
   });
 });
 
 router.get('/create', function(req, res) {
+  var mode;
   if ((data.mode)===("colors")) {
   	mode = data.colors;
   } else if ((data.mode)===("body")) {
   	mode = data.body;
+  } else if ((data.mode)===("shapes")) {
+  	mode = data.shapes;
   } else if ((data.mode)===("animals")) {
   	mode = data.animals;
   } else if ((data.mode)===("fruit")) {
@@ -88,59 +98,6 @@ router.get('/create', function(req, res) {
     title: 'create',
     config: config,
     data:mode
-  });
-});
-
-var flashcard = ['flashcard','times-tables','count','money']
-
-flashcard.forEach(function(i) {
-  router.get('/'+i, function(req, res) {
-    res.render('flashcard', {
-      title: i,
-      config: config
-    });
-  });
-});
-
-router.get('/memory', function(req, res) {
-  res.render('memory', {
-    title: 'memory',
-    config: config
-  });
-});
-
-router.get('/guess', function(req, res) {
-  res.render('guess', {
-    title: 'guess the number',
-    config: config
-  });
-});
-
-router.get('/plus', function(req, res) {
-  res.render('plus', {
-    title: 'plus',
-    config: config
-  });
-});
-
-router.get('/calculate', function(req, res) {
-  res.render('calculate', {
-    title: 'calculate',
-    config: config
-  });
-});
-
-router.get('/subtract', function(req, res) {
-  res.render('subtract', {
-    title: 'subtract',
-    config: config
-  });
-});
-
-router.get('/test', function(req, res) {
-  res.render('test', {
-    title: 'test',
-    config: config
   });
 });
 
