@@ -2,9 +2,11 @@ var socket = io.connect();
 var mode;
 socket.emit('getData');
 socket.addEventListener("quiz", function (response) {
+
 var assetPath = "/audio/";
 var quiz = response.quizData;
 var audio = response.quizAudio;
+console.log(audio)
 if ((quiz.mode)===("colors")) {
 	mode = quiz.colors;
 	sounds = audio.colors;
@@ -17,6 +19,9 @@ if ((quiz.mode)===("colors")) {
 } else if ((quiz.mode)===("fruit")) {
 	mode = quiz.fruit;
 	sounds = audio.fruit
+}	else if ((quiz.mode)===("shapes")) {
+	mode = quiz.shapes;
+	sounds = audio.shapes
 } else if ((quiz.mode)===("vegetables")) {
 	mode = quiz.vegetables;
 	sounds = audio.vegetables

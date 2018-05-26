@@ -15,6 +15,9 @@ if ((quiz.mode)===("colors")) {
 } else if ((quiz.mode)===("body")) {
 	mode = quiz.body;
 	sounds = audio.body
+}	else if ((quiz.mode)===("shapes")) {
+	mode = quiz.shapes;
+	sounds = audio.shapes
 } else if ((quiz.mode)===("animals")) {
 	mode = quiz.animals;
 	sounds = audio.animals

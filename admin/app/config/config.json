@@ -17,7 +17,8 @@
         "letters",
         "numbers",
         "items",
-        "cooked-food"
+        "cooked-food",
+        "shapes"
     ],
     "users":[
       "dandan",

@@ -52,6 +52,43 @@
       "id": "incorrect"
     }
   ],
+  "shapes": [{
+      "src": "shapes/circle.wav",
+      "id": "circle"
+    },
+    {
+      "src": "shapes/cross.wav",
+      "id": "cross"
+    },
+    {
+      "src": "shapes/diamond.wav",
+      "id": "diamond"
+    },
+    {
+      "src": "shapes/heart.wav",
+      "id": "heart"
+    },
+    {
+      "src": "shapes/hexagon.wav",
+      "id": "hexagon"
+    },
+    {
+      "src": "shapes/pentagon.wav",
+      "id": "pentagon"
+    },
+    {
+      "src": "shapes/rectangle.wav",
+      "id": "rectangle"
+    },
+    {
+      "src": "shapes/square.wav",
+      "id": "square"
+    },
+    {
+      "src": "shapes/triangle.wav",
+      "id": "triangle"
+    }
+  ],
   "body": [{
       "src": "body/ankle.wav",
       "id": "ankle"

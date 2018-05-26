@@ -1,4 +1,150 @@
 {
+    "shapes": [
+        {
+            "id": 1,
+            "question": "What shape is this?",
+            "img": "shapes/circle.png",
+            "options": [
+                {
+                    "a": "pentagon",
+                    "b": "heart",
+                    "c": "circle",
+                    "d": "rectangle"
+                }
+            ],
+            "answer": "circle",
+            "score": 0,
+            "status": ""
+        },
+        {
+            "id": 2,
+            "question": "What shape is this?",
+            "img": "shapes/cross.png",
+            "options": [
+                {
+                    "a": "cross",
+                    "b": "pentagon",
+                    "c": "rectangle",
+                    "d": "hexagon"
+                }
+            ],
+            "answer": "cross",
+            "score": 0,
+            "status": ""
+        },
+        {
+            "id": 3,
+            "question": "What shape is this?",
+            "img": "shapes/diamond.png",
+            "options": [
+                {
+                    "a": "rectangle",
+                    "b": "hexagon",
+                    "c": "circle",
+                    "d": "diamond"
+                }
+            ],
+            "answer": "diamond",
+            "score": 0,
+            "status": ""
+        },
+        {
+            "id": 4,
+            "question": "What shape is this?",
+            "img": "shapes/heart.png",
+            "options": [
+                {
+                    "a": "diamond",
+                    "b": "heart",
+                    "c": "triangle",
+                    "d": "cross"
+                }
+            ],
+            "answer": "heart",
+            "score": 0,
+            "status": ""
+        },
+        {
+            "id": 5,
+            "question": "What shape is this?",
+            "img": "shapes/hexagon.png",
+            "options": [
+                {
+                    "a": "diamond",
+                    "b": "triangle",
+                    "c": "hexagon",
+                    "d": "pentagon"
+                }
+            ],
+            "answer": "hexagon",
+            "score": 0,
+            "status": ""
+        },
+        {
+            "id": 6,
+            "question": "What shape is this?",
+            "img": "shapes/pentagon.png",
+            "options": [
+                {
+                    "a": "circle",
+                    "b": "cross",
+                    "c": "pentagon",
+                    "d": "rectangle"
+                }
+            ],
+            "answer": "pentagon",
+            "score": 0,
+            "status": ""
+        },
+        {
+            "id": 7,
+            "question": "What shape is this?",
+            "img": "shapes/rectangle.png",
+            "options": [
+                {
+                    "a": "square",
+                    "b": "pentagon",
+                    "c": "heart",
+                    "d": "rectangle"
+                }
+            ],
+            "answer": "rectangle",
+            "score": 0,
+            "status": ""
+        },
+        {
+            "id": 8,
+            "question": "What shape is this?",
+            "img": "shapes/square.png",
+            "options": [
+                {
+                    "a": "square",
+                    "b": "triangle",
+                    "c": "diamond",
+                    "d": "circle"
+                }
+            ],
+            "answer": "square",
+            "score": 0,
+            "status": ""
+        },
+        {
+            "id": 9,
+            "question": "What shape is this?",
+            "img": "shapes/triangle.png",
+            "options": [
+                {
+                    "a": "cross",
+                    "b": "diamond",
+                    "c": "hexagon",
+                    "d": "triangle"
+                }
+            ],
+            "answer": "triangle",
+            "score": 0,
+            "status": ""
+        }
+    ],
     "colors": [
         {
             "id": 1,
@@ -3658,6 +3804,6 @@
         }
     },
     "language": "en",
-    "mode": "colors",
+    "mode": "shapes",
     "user": "dandan"
 }
